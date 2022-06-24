@@ -1,0 +1,14 @@
+- name: Home
+  link: /
+- name: News
+  link: /news.html
+- name: Community
+  link: /community.html
+- name: Results
+  link: /results.html
+- name: Datasets
+  link: /datasets.html
+- name: Software
+  link: /software.html
+- name: Methods
+  link: /methods.html
