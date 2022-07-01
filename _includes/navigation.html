@@ -1,5 +1,10 @@
-<nav>
-  {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
-  {% endfor %}
-</nav>
+<div class="header">
+  <div class="site-title"><a href="./">ILAMB</a></div>
+  <div class="main-menu" role="navigation" aria-label="main">
+    <ul>
+      {% for item in site.data.navigation %}
+      <li><a href="{{ item.link }}"{% if page.url == item.link %}class="active"{% endif %}>{{ item.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

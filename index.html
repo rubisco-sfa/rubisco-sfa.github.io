@@ -1,19 +1,13 @@
 ---
-layout: default
+layout: hero
 title: ILAMB
 ---
-
-As earth system models (ESMs) become increasingly complex, there is a
-growing need for comprehensive and multi-faceted evaluation of model
-projections. The International Land Model Benchmarking (ILAMB) project
-is a model-data intercomparison and integration project designed to
-improve the performance of land models and, in parallel, improve the
-design of new measurement campaigns to reduce uncertainties associated
-with key land surface processes. We aim to
-
-<ul>
-<li> develop internationally accepted benchmarks for land model performance,
-<li> promote the use of these benchmarks by the international community for model intercomparison,
-<li> strengthen linkages between experimental, remote sensing, and climate modeling communities in the design of new model tests and new measurement programs, and
-<li> support the design and development of a new, open source, benchmarking software system for use by the international community.
-</ul>
+<div class="home-news">
+  {% for post in site.posts %}
+  <div class="news-item">
+    <span class="news-date">{{ post.date | date: "%-d %B %Y" }}</span>
+    <span class="news-headline"><a href="{{ post.url }}">{{ post.subject }}</a></span>
+    {{ post.excerpt }}
+  </div>
+  {% endfor %}
+</div>

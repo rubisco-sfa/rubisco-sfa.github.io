@@ -1,7 +1,5 @@
 - name: Home
   link: /
-- name: News
-  link: /news.html
 - name: Community
   link: /community.html
 - name: Results
