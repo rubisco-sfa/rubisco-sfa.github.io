@@ -3,11 +3,13 @@ layout: hero
 title: ILAMB
 ---
 <div class="home-news">
-  {% for post in site.posts %}
+  {% for post in site.posts limit:3 %}
   <div class="news-item">
     <span class="news-date">{{ post.date | date: "%-d %B %Y" }}</span>
     <span class="news-headline"><a href="{{ post.url }}">{{ post.subject }}</a></span>
     {{ post.excerpt }}
   </div>
   {% endfor %}
+  <p>Check out our news <a href="./news.html">archive</a> for older posts.
 </div>
+

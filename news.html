@@ -3,11 +3,12 @@ layout: default
 title: News
 ---
 
-<ul>
+<div class="home-news">
   {% for post in site.posts %}
-  <li>
-    <h2><a href="{{ post.url }}">{{ post.subject }}</a></h2>
+  <div class="news-item">
+    <span class="news-date">{{ post.date | date: "%-d %B %Y" }}</span>
+    <span class="news-headline"><a href="{{ post.url }}">{{ post.subject }}</a></span>
     {{ post.excerpt }}
-  </li>
+  </div>
   {% endfor %}
-</ul>
+</div>
