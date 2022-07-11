@@ -1,0 +1,15 @@
+- title: "The International Land Model Benchmarking (ILAMB) System: Design, Theory, and Implementation"
+  doi: 10.1029/2018MS001354
+  summary: This paper presents an overview of our scoring methodology with mathematical details along with our thinking on what scores mean and how they should be used.
+
+- title: "2016 International Land Model Benchmarking (ILAMB) Workshop Report"
+  doi: 10.2172/1330803
+  summary: This report constitutes the outcome of the 2016 ILAMB workshop and contains a representation of the state of the art in model benchmarking along with community recommendations for future work.
+
+- title: "Evaluating Uncertainties in Marine Biogeochemical Models: Benchmarking Aerosol Precursors"
+  doi: 10.3390/atmos9050184
+  summary: A first paper on developing the International Ocean Model Benchmarking (IOMB) effort, focused on accurate representation of aerosols in the marine boundary layer (MBL) which is essential to reduce uncertainty and provide reliable information on offsets to global warming.
+  
+- title: "A Framework for Benchmarking Land Models"
+  doi: 10.5194/bg-9-3857-2012
+  summary: An earlier paper which proposes our benchmarking framework for evaluation of land model performances and highlights major challenges at an infant stage of benchmark analysis.
