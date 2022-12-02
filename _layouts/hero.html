@@ -1,41 +1,40 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-  </head>
-  <body>
-    <div class="main-container">
-    {% include navigation.html %}
-      <div class="hero">
-	<div class="hero-title-container">
-	  <div class="hero-title-acro">ILAMB</div>
-	  <div class="hero-title-full">International Land Model Benchmarking</div>
-	</div>
-	<p>As earth system models (ESMs) become increasingly complex,
-	there is a growing need for comprehensive and multi-faceted
-	evaluation of model projections. The International Land Model
-	Benchmarking (ILAMB) project is a model-data intercomparison
-	and integration project designed to improve the performance of
-	land models and, in parallel, improve the design of new
-	measurement campaigns to reduce uncertainties associated with
-	key land surface processes.</p>
-      </div>
-      <div class="body-text-container stuff">
-	<div class="stuff-text">
-	  {{ content }}
-	</div>
-      </div>
-      <div id="footer">
-	<div id="slack-container">
-	  <div id="slack-icon"><a href="https://ilamb-community.slack.com"><img src="./assets/images/Slack_Monochrome_White.svg" alt="Slack icon"></a></div>
-	  <div class="slack-links"><a href="https://join.slack.com/t/ilamb-community/shared_invite/zt-1au392ydj-ICJeTILrUHWf66reBSFD0Q">Join ilamb-community</a></div>
-	</div>
-      </div>
-    </div>
-  </body>
-</html>
 
+<head>
+	<meta charset="utf-8">
+	<title>{{ page.title }}</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+	<div class="main-container">
+		{% include navigation.html %}
+		<div class="hero">
+			<div class="hero-title-container">
+				<div class="hero-title-acro">ILAMB</div>
+				<div class="hero-title-full">International Land Model Benchmarking</div>
+			</div>
+			<p>As earth system models (ESMs) become increasingly complex,
+				there is a growing need for comprehensive and multi-faceted
+				evaluation of model projections. The International Land Model
+				Benchmarking (ILAMB) project is a model-data intercomparison
+				and integration project designed to improve the performance of
+				land models and, in parallel, improve the design of new
+				measurement campaigns to reduce uncertainties associated with
+				key land surface processes.</p>
+		</div>
+		<div class="body-text-container stuff">
+			<div class="stuff-text">
+				{{ content }}
+			</div>
+		</div>
+		{% include footer.html %}
+	</div>
+</body>
+
+</html>
