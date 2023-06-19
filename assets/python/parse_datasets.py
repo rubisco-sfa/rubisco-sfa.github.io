@@ -11,7 +11,6 @@ import pandas as pd
 
 def parse_ilamb_configure_file(filename):
     """Configure parsing for ILAMB configure files."""
-    ilamb_cfg = {}
     lines = open(filename, encoding="utf-8").readlines()
     col_h1 = []
     col_h2 = []
@@ -47,7 +46,8 @@ def parse_ilamb_configure_file(filename):
 
 
 def ilamb_dataframe_to_html_table(cfg, html_root, dataset_ignores=["Koven"]):
-    """Take a dataframe with 'Variable', 'Source', and 'Dataset' and render a html table which sorts by Variables."""
+    """Take a dataframe with 'Variable', 'Source', and 'Dataset' and render a
+    html table which sorts by Variables."""
     html = """
     <table>"""
     for grp, dfg in cfg.groupby("Variable"):
@@ -70,10 +70,11 @@ def ilamb_dataframe_to_html_table(cfg, html_root, dataset_ignores=["Koven"]):
     return html
 
 
+mode = "IOMB"
 ilamb_root = os.path.join(os.environ["ILAMB_ROOT"])
-ilamb_cfg = os.path.join(site.getsitepackages()[0], "ILAMB/data/ilamb.cfg")
+ilamb_cfg = os.path.join(site.getsitepackages()[0], f"ILAMB/data/{mode.lower()}.cfg")
 ilamb_df = parse_ilamb_configure_file(ilamb_cfg)
 ilamb_df.sort_values("Variable")
 
-html = ilamb_dataframe_to_html_table(ilamb_df, "https://www.ilamb.org/ILAMB-Data/")
+html = ilamb_dataframe_to_html_table(ilamb_df, f"https://www.ilamb.org/{mode}-Data/")
 print(html)
