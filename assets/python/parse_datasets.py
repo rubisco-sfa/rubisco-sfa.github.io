@@ -70,7 +70,7 @@ def ilamb_dataframe_to_html_table(cfg, html_root, dataset_ignores=["Koven"]):
     return html
 
 
-mode = "IOMB"
+mode = "ILAMB"
 ilamb_root = os.path.join(os.environ["ILAMB_ROOT"])
 ilamb_cfg = os.path.join(site.getsitepackages()[0], f"ILAMB/data/{mode.lower()}.cfg")
 ilamb_df = parse_ilamb_configure_file(ilamb_cfg)
