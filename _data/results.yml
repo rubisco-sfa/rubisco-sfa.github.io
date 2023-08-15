@@ -1,26 +1,26 @@
 - name: Land Comparison of CMIP5 and CMIP6 Models
-  link: https://www.ilamb.org/CMIP5v6/historical/dashboard.html
+  link: https://www.ilamb.org/CMIP5v6/historical/
   per: 60
   img: ilamb_cmip5v6.png
   description: We examine the performance of historical simulations from a selection of coupled Earth system models with a contribution in the CMIP5 and CMIP6 eras.
 
 
 - name: Land Comparison of CMIP6 Models
-  link: https://www.ilamb.org/CMIP6/historical/dashboard.html
+  link: https://www.ilamb.org/CMIP6/historical/
   per: 42
   img: ilamb_cmip6.png
   description: This land-focused study includes coupled model results for the historical experiment from the CMIP6 era. We also use this as a testing ground to include new datasets and additional models. If you have a suggestion of a reference dataset or would like to request we include a model, please raise an <a href="https://github.com/rubisco-sfa/ILAMB-Data/issues">issue</a>.
 
 
 - name: Land Comparison of Offline CMIP6 Models
-  link: https://www.ilamb.org/land-hist/dashboard.html
+  link: https://www.ilamb.org/land-hist/
   per: 47
   img: ilamb_landhist.png
   description: We examine performance differences among a selection of land models (CLM, ISBA-CTRIP, and JSBACH) run using different forcings (GSWP3, CRUJRA, and Princeton).
 
 
 - name: Ocean Comparison of CMIP5 and CMIP6 Models
-  link: https://www.ilamb.org/CMIP5v6/IOMB_AR6/dashboard.html
+  link: https://www.ilamb.org/CMIP5v6/IOMB_AR6/
   per: 62
   img: iomb_cmip5v6.png
   description: While the focus of ILAMB has been on land, we also have used the software to compare ocean model output which we refer to as International Ocean Model Benchmarking (IOMB). This study is analagous to the land comparison of CMIP5 and CMIP6 era models over the historical period.
