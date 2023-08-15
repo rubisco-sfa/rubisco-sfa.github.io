@@ -11,4 +11,4 @@ The code, datasets, and auxillary files needed to reproduce the analysis describ
 * You will need this configuration [file](https://github.com/rubisco-sfa/ILAMB/blob/master/src/ILAMB/data/iomb.cfg) which describes the set of reference data to compare against models.
 * We have applied this configuration to a collection of CMIP6 models and host the [results](https://www.ilamb.org/dev/IOMB/) for the community to use.
 
-[<img src="https://www.ipcc.ch/report/ar6/wg1/downloads/figures/IPCC_AR6_WGI_Figure_5_22.png">](https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-5#figure-5-22)
+[<img width=750px src="https://www.ipcc.ch/report/ar6/wg1/downloads/figures/IPCC_AR6_WGI_Figure_5_22.png">](https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-5#figure-5-22)
